@@ -1,0 +1,528 @@
+{
+  "documents": [
+    {
+      "doc_id": "INFO_DOC_2025",
+      "title": "Senus PLC Information Document (Euronext Access Admission)",
+      "published": "2025-12-18",
+      "source_url": "https://live.euronext.com/sites/default/files/2025-12/SENUS%20PLC%20-%20Information%20Document.pdf",
+      "audited": true
+    },
+    {
+      "doc_id": "HY26_RESULTS",
+      "title": "Senus PLC Half Year Results for the 6 months ended 31 December 2025",
+      "published": "2026-03-19",
+      "source_url": "https://app.assiduous.tech/investor-relations/senus",
+      "audited": false
+    },
+    {
+      "doc_id": "LISTING_PR_2025",
+      "title": "Senus PLC Direct Listing Launch Press Release",
+      "published": "2025-12-18",
+      "source_url": "https://app.assiduous.tech/investor-relations/senus",
+      "audited": false
+    },
+    {
+      "doc_id": "AGM_NOTICE_2026",
+      "title": "Senus PLC Notice of Annual General Meeting 2026",
+      "published": "2026-06-05",
+      "source_url": "https://app.assiduous.tech/investor-relations/senus",
+      "audited": false
+    },
+    {
+      "doc_id": "LEADERSHIP_2026",
+      "title": "Senus PLC Executive Leadership Transition and Notice of Results",
+      "published": "2026-06-24",
+      "source_url": "https://app.assiduous.tech/investor-relations/senus",
+      "audited": false
+    }
+  ],
+  "periods": [
+    {
+      "period_id": "FY2024",
+      "start": "2023-07-01",
+      "end": "2024-06-30",
+      "type": "annual"
+    },
+    {
+      "period_id": "FY2025",
+      "start": "2024-07-01",
+      "end": "2025-06-30",
+      "type": "annual"
+    },
+    {
+      "period_id": "H1FY2025",
+      "start": "2024-07-01",
+      "end": "2024-12-31",
+      "type": "half"
+    },
+    {
+      "period_id": "H1FY2026",
+      "start": "2025-07-01",
+      "end": "2025-12-31",
+      "type": "half"
+    }
+  ],
+  "facts": [
+    {
+      "period": "FY2024",
+      "statement": "pnl",
+      "item": "revenue",
+      "value": 688317,
+      "doc": "INFO_DOC_2025"
+    },
+    {
+      "period": "FY2024",
+      "statement": "pnl",
+      "item": "gross_profit",
+      "value": 432477,
+      "doc": "INFO_DOC_2025"
+    },
+    {
+      "period": "FY2024",
+      "statement": "pnl",
+      "item": "admin_expenses",
+      "value": 1560853,
+      "doc": "INFO_DOC_2025"
+    },
+    {
+      "period": "FY2024",
+      "statement": "pnl",
+      "item": "operating_loss",
+      "value": -1130729,
+      "doc": "INFO_DOC_2025"
+    },
+    {
+      "period": "FY2024",
+      "statement": "pnl",
+      "item": "loss_after_tax",
+      "value": -1098095,
+      "doc": "INFO_DOC_2025"
+    },
+    {
+      "period": "FY2024",
+      "statement": "cashflow",
+      "item": "net_operating_cash_flow",
+      "value": -1166697,
+      "doc": "INFO_DOC_2025"
+    },
+    {
+      "period": "FY2024",
+      "statement": "balance",
+      "item": "cash",
+      "value": 424639,
+      "doc": "INFO_DOC_2025"
+    },
+    {
+      "period": "FY2024",
+      "statement": "balance",
+      "item": "net_assets",
+      "value": 574681,
+      "doc": "INFO_DOC_2025"
+    },
+    {
+      "period": "FY2025",
+      "statement": "pnl",
+      "item": "revenue",
+      "value": 836991,
+      "doc": "INFO_DOC_2025"
+    },
+    {
+      "period": "FY2025",
+      "statement": "pnl",
+      "item": "gross_profit",
+      "value": 648450,
+      "doc": "INFO_DOC_2025"
+    },
+    {
+      "period": "FY2025",
+      "statement": "pnl",
+      "item": "admin_expenses",
+      "value": 1286058,
+      "doc": "INFO_DOC_2025"
+    },
+    {
+      "period": "FY2025",
+      "statement": "pnl",
+      "item": "operating_loss",
+      "value": -633694,
+      "doc": "INFO_DOC_2025"
+    },
+    {
+      "period": "FY2025",
+      "statement": "pnl",
+      "item": "loss_after_tax",
+      "value": -590256,
+      "doc": "INFO_DOC_2025"
+    },
+    {
+      "period": "FY2025",
+      "statement": "cashflow",
+      "item": "net_operating_cash_flow",
+      "value": -374820,
+      "doc": "INFO_DOC_2025"
+    },
+    {
+      "period": "FY2025",
+      "statement": "balance",
+      "item": "cash",
+      "value": 140135,
+      "doc": "INFO_DOC_2025"
+    },
+    {
+      "period": "FY2025",
+      "statement": "balance",
+      "item": "net_assets",
+      "value": -15575,
+      "doc": "INFO_DOC_2025"
+    },
+    {
+      "period": "H1FY2025",
+      "statement": "pnl",
+      "item": "revenue",
+      "value": 340931,
+      "doc": "HY26_RESULTS"
+    },
+    {
+      "period": "H1FY2025",
+      "statement": "pnl",
+      "item": "cost_of_sales",
+      "value": 69600,
+      "doc": "HY26_RESULTS"
+    },
+    {
+      "period": "H1FY2025",
+      "statement": "pnl",
+      "item": "gross_profit",
+      "value": 272331,
+      "doc": "HY26_RESULTS"
+    },
+    {
+      "period": "H1FY2025",
+      "statement": "pnl",
+      "item": "admin_expenses",
+      "value": 677908,
+      "doc": "HY26_RESULTS"
+    },
+    {
+      "period": "H1FY2025",
+      "statement": "pnl",
+      "item": "operating_loss",
+      "value": -405577,
+      "doc": "HY26_RESULTS"
+    },
+    {
+      "period": "H1FY2025",
+      "statement": "pnl",
+      "item": "interest_expense",
+      "value": 1036,
+      "doc": "HY26_RESULTS"
+    },
+    {
+      "period": "H1FY2025",
+      "statement": "pnl",
+      "item": "loss_after_tax",
+      "value": -406613,
+      "doc": "HY26_RESULTS"
+    },
+    {
+      "period": "H1FY2025",
+      "statement": "balance",
+      "item": "cash",
+      "value": 72382,
+      "doc": "HY26_RESULTS"
+    },
+    {
+      "period": "H1FY2025",
+      "statement": "balance",
+      "item": "debtors",
+      "value": 211150,
+      "doc": "HY26_RESULTS"
+    },
+    {
+      "period": "H1FY2025",
+      "statement": "balance",
+      "item": "net_assets",
+      "value": 173316,
+      "doc": "HY26_RESULTS"
+    },
+    {
+      "period": "H1FY2025",
+      "statement": "cashflow",
+      "item": "net_operating_cash_flow",
+      "value": -450181,
+      "doc": "HY26_RESULTS"
+    },
+    {
+      "period": "H1FY2025",
+      "statement": "cashflow",
+      "item": "depreciation",
+      "value": 10016,
+      "doc": "HY26_RESULTS"
+    },
+    {
+      "period": "H1FY2026",
+      "statement": "pnl",
+      "item": "revenue",
+      "value": 354813,
+      "doc": "HY26_RESULTS"
+    },
+    {
+      "period": "H1FY2026",
+      "statement": "pnl",
+      "item": "cost_of_sales",
+      "value": 64861,
+      "doc": "HY26_RESULTS"
+    },
+    {
+      "period": "H1FY2026",
+      "statement": "pnl",
+      "item": "gross_profit",
+      "value": 289952,
+      "doc": "HY26_RESULTS"
+    },
+    {
+      "period": "H1FY2026",
+      "statement": "pnl",
+      "item": "admin_expenses",
+      "value": 781975,
+      "doc": "HY26_RESULTS"
+    },
+    {
+      "period": "H1FY2026",
+      "statement": "pnl",
+      "item": "other_operating_income",
+      "value": 8269,
+      "doc": "HY26_RESULTS"
+    },
+    {
+      "period": "H1FY2026",
+      "statement": "pnl",
+      "item": "operating_loss",
+      "value": -483753,
+      "doc": "HY26_RESULTS"
+    },
+    {
+      "period": "H1FY2026",
+      "statement": "pnl",
+      "item": "interest_expense",
+      "value": 1391,
+      "doc": "HY26_RESULTS"
+    },
+    {
+      "period": "H1FY2026",
+      "statement": "pnl",
+      "item": "loss_after_tax",
+      "value": -485144,
+      "doc": "HY26_RESULTS"
+    },
+    {
+      "period": "H1FY2026",
+      "statement": "balance",
+      "item": "goodwill",
+      "value": 669550,
+      "doc": "HY26_RESULTS",
+      "note": "Note 4 of the same document states 669,500 - EUR50 internal inconsistency flagged by validator"
+    },
+    {
+      "period": "H1FY2026",
+      "statement": "balance",
+      "item": "development_costs",
+      "value": 239765,
+      "doc": "HY26_RESULTS"
+    },
+    {
+      "period": "H1FY2026",
+      "statement": "balance",
+      "item": "tangible_assets",
+      "value": 42006,
+      "doc": "HY26_RESULTS"
+    },
+    {
+      "period": "H1FY2026",
+      "statement": "balance",
+      "item": "debtors",
+      "value": 188149,
+      "doc": "HY26_RESULTS"
+    },
+    {
+      "period": "H1FY2026",
+      "statement": "balance",
+      "item": "cash",
+      "value": 735189,
+      "doc": "HY26_RESULTS"
+    },
+    {
+      "period": "H1FY2026",
+      "statement": "balance",
+      "item": "creditors_within_1yr",
+      "value": -387105,
+      "doc": "HY26_RESULTS"
+    },
+    {
+      "period": "H1FY2026",
+      "statement": "balance",
+      "item": "contingent_consideration",
+      "value": -850000,
+      "doc": "HY26_RESULTS",
+      "note": "Loamin earnout, performance-linked, non-cash on completion"
+    },
+    {
+      "period": "H1FY2026",
+      "statement": "balance",
+      "item": "creditors_after_1yr",
+      "value": -76474,
+      "doc": "HY26_RESULTS"
+    },
+    {
+      "period": "H1FY2026",
+      "statement": "balance",
+      "item": "net_assets",
+      "value": 561081,
+      "doc": "HY26_RESULTS"
+    },
+    {
+      "period": "H1FY2026",
+      "statement": "balance",
+      "item": "share_capital",
+      "value": 25000,
+      "doc": "HY26_RESULTS"
+    },
+    {
+      "period": "H1FY2026",
+      "statement": "balance",
+      "item": "share_premium",
+      "value": 300000,
+      "doc": "HY26_RESULTS"
+    },
+    {
+      "period": "H1FY2026",
+      "statement": "balance",
+      "item": "retained_earnings",
+      "value": 236081,
+      "doc": "HY26_RESULTS",
+      "note": "Positive despite cumulative losses - pre-IPO capital reorganisation; validator raises anomaly"
+    },
+    {
+      "period": "H1FY2026",
+      "statement": "cashflow",
+      "item": "depreciation",
+      "value": 10014,
+      "doc": "HY26_RESULTS"
+    },
+    {
+      "period": "H1FY2026",
+      "statement": "cashflow",
+      "item": "working_capital_movement",
+      "value": 64839,
+      "doc": "HY26_RESULTS"
+    },
+    {
+      "period": "H1FY2026",
+      "statement": "cashflow",
+      "item": "net_operating_cash_flow",
+      "value": -410291,
+      "doc": "HY26_RESULTS"
+    },
+    {
+      "period": "H1FY2026",
+      "statement": "cashflow",
+      "item": "capex",
+      "value": -8500,
+      "doc": "HY26_RESULTS"
+    },
+    {
+      "period": "H1FY2026",
+      "statement": "cashflow",
+      "item": "loan_repayment",
+      "value": -124837,
+      "doc": "HY26_RESULTS"
+    },
+    {
+      "period": "H1FY2026",
+      "statement": "cashflow",
+      "item": "share_issue_proceeds",
+      "value": 1138683,
+      "doc": "HY26_RESULTS"
+    },
+    {
+      "period": "H1FY2026",
+      "statement": "cashflow",
+      "item": "net_change_in_cash",
+      "value": 595055,
+      "doc": "HY26_RESULTS"
+    },
+    {
+      "period": "H1FY2026",
+      "statement": "balance",
+      "item": "bank_debt",
+      "value": 76500,
+      "doc": "HY26_RESULTS",
+      "note": "Stated in Highlights narrative"
+    }
+  ],
+  "kpis": {
+    "strategy_name": "Senus 2030",
+    "revenue_cagr_target": 0.5,
+    "cagr_period": "FY2026-FY2030",
+    "ebitda_positive_target": "FY2028",
+    "customer_accounts_fy2025": 138,
+    "channel_mix_fy2025": {
+      "enterprise": 0.69,
+      "rnd": 0.27,
+      "independent": 0.04
+    },
+    "customers_by_channel_fy2025": {
+      "enterprise": 36,
+      "rnd": 4,
+      "independent": 98
+    },
+    "geography_fy2025": {
+      "ireland": 0.78,
+      "ex_ireland": 0.22
+    },
+    "acv_by_product": {
+      "SOIL": 12309,
+      "TERRAIN": 21524,
+      "ERA": 58900
+    },
+    "shares_in_issue": 2561332,
+    "listing_price_eur": 5.126,
+    "h1fy2026_deals": {
+      "count": 21,
+      "closed_value": 700000,
+      "open_pipeline": 500000
+    }
+  },
+  "events": [
+    {
+      "date": "2025-11-09",
+      "doc": "LISTING_PR_2025",
+      "type": "m_and_a",
+      "event": "Loamin Ltd. acquisition completed - geospatial AI, UK-based; zero cash consideration, EUR 850k performance-linked earnout; founders joined as Head of Research and Head of Software Engineering."
+    },
+    {
+      "date": "2025-12-22",
+      "doc": "LISTING_PR_2025",
+      "type": "capital_markets",
+      "event": "Direct Listing on Euronext Access+ Dublin at EUR 5.126/share, EUR 13.13m market cap; preceded by EUR 1.1m private placement."
+    },
+    {
+      "date": "2026-07-08",
+      "doc": "AGM_NOTICE_2026",
+      "type": "governance",
+      "event": "AGM scheduled at Athlone HQ."
+    },
+    {
+      "date": "2026-06-24",
+      "doc": "LEADERSHIP_2026",
+      "type": "governance_risk",
+      "event": "MD Brendan Allen to transition to Vice Chairman by October 2026 (temporary health issues). Board sub-committee formed to recruit successor; global Sales Director search launched. Key-person risk flagged for ERA/financial-institutions vertical where Allen was instrumental. Disclosed as MAR inside information."
+    },
+    {
+      "date": "2026-09-11",
+      "doc": "LEADERSHIP_2026",
+      "type": "reporting",
+      "event": "FY2026 (year to 30 June 2026) results announcement scheduled."
+    }
+  ]
+}
