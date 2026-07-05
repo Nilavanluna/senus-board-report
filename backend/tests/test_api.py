@@ -54,3 +54,11 @@ def test_events_include_leadership_transition():
     with client:
         events = client.get("/api/events").json()["events"]
         assert any(e["type"] == "governance_risk" for e in events)
+
+
+def test_kpis_expose_strategy_data():
+    with client:
+        kpis = client.get("/api/kpis").json()
+        assert kpis["revenue_cagr_target"] == 0.5
+        assert kpis["acv_by_product"]["ERA"] == 58900
+        assert kpis["shares_in_issue"] == 2561332

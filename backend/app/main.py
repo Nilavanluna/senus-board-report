@@ -103,6 +103,16 @@ def metrics(s: Session = Depends(get_session)):
     return {"metrics": [r.__dict__ for r in results]}
 
 
+@app.get("/api/kpis")
+def strategy_kpis(s: Session = Depends(get_session)):
+    """Senus 2030 strategy KPIs: channel mix, ACV by product, shares in
+    issue, listing price, deal pipeline - everything outside the metrics
+    engine's own inputs that the dashboard needs but must not hardcode."""
+    row = s.execute(select(KpiSet).where(KpiSet.name == "senus_2030")) \
+           .scalar_one()
+    return row.data
+
+
 @app.get("/api/events")
 def corporate_events(s: Session = Depends(get_session)):
     """Corporate events timeline (M&A, listings, governance changes)."""
