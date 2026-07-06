@@ -68,14 +68,18 @@
       "statement": "pnl",
       "item": "revenue",
       "value": 688317,
-      "doc": "INFO_DOC_2025"
+      "doc": "INFO_DOC_2025",
+      "source_page": 12,
+      "source_excerpt": "Revenue 836,991 688,317"
     },
     {
       "period": "FY2024",
       "statement": "pnl",
       "item": "gross_profit",
       "value": 432477,
-      "doc": "INFO_DOC_2025"
+      "doc": "INFO_DOC_2025",
+      "source_page": 12,
+      "source_excerpt": "Gross Profit 648,450 432,477"
     },
     {
       "period": "FY2024",
@@ -124,14 +128,18 @@
       "statement": "pnl",
       "item": "revenue",
       "value": 836991,
-      "doc": "INFO_DOC_2025"
+      "doc": "INFO_DOC_2025",
+      "source_page": 12,
+      "source_excerpt": "Revenue 836,991 688,317"
     },
     {
       "period": "FY2025",
       "statement": "pnl",
       "item": "gross_profit",
       "value": 648450,
-      "doc": "INFO_DOC_2025"
+      "doc": "INFO_DOC_2025",
+      "source_page": 12,
+      "source_excerpt": "Gross Profit 648,450 432,477"
     },
     {
       "period": "FY2025",
@@ -180,49 +188,63 @@
       "statement": "pnl",
       "item": "revenue",
       "value": 340931,
-      "doc": "HY26_RESULTS"
+      "doc": "HY26_RESULTS",
+      "source_page": 4,
+      "source_excerpt": "Turnover 354,813 340,931"
     },
     {
       "period": "H1FY2025",
       "statement": "pnl",
       "item": "cost_of_sales",
       "value": 69600,
-      "doc": "HY26_RESULTS"
+      "doc": "HY26_RESULTS",
+      "source_page": 4,
+      "source_excerpt": "Cost of Sales (64,861) (69,600)"
     },
     {
       "period": "H1FY2025",
       "statement": "pnl",
       "item": "gross_profit",
       "value": 272331,
-      "doc": "HY26_RESULTS"
+      "doc": "HY26_RESULTS",
+      "source_page": 4,
+      "source_excerpt": "Gross Profit 289,952 272,331"
     },
     {
       "period": "H1FY2025",
       "statement": "pnl",
       "item": "admin_expenses",
       "value": 677908,
-      "doc": "HY26_RESULTS"
+      "doc": "HY26_RESULTS",
+      "source_page": 4,
+      "source_excerpt": "Administrative Expenses (781,975) (677,908)"
     },
     {
       "period": "H1FY2025",
       "statement": "pnl",
       "item": "operating_loss",
       "value": -405577,
-      "doc": "HY26_RESULTS"
+      "doc": "HY26_RESULTS",
+      "source_page": 4,
+      "source_excerpt": "Operating Loss (483,753) (405,577)"
     },
     {
       "period": "H1FY2025",
       "statement": "pnl",
       "item": "interest_expense",
       "value": 1036,
-      "doc": "HY26_RESULTS"
+      "doc": "HY26_RESULTS",
+      "source_page": 4,
+      "source_excerpt": "Interest Payable and Similar Charges (1,391) (1,036)"
     },
     {
       "period": "H1FY2025",
       "statement": "pnl",
       "item": "loss_after_tax",
       "value": -406613,
-      "doc": "HY26_RESULTS"
+      "doc": "HY26_RESULTS",
+      "source_page": 4,
+      "source_excerpt": "Loss for the Financial Period (485,144) (406,613)"
     },
     {
       "period": "H1FY2025",
@@ -264,56 +286,72 @@
       "statement": "pnl",
       "item": "revenue",
       "value": 354813,
-      "doc": "HY26_RESULTS"
+      "doc": "HY26_RESULTS",
+      "source_page": 4,
+      "source_excerpt": "Turnover 354,813 340,931"
     },
     {
       "period": "H1FY2026",
       "statement": "pnl",
       "item": "cost_of_sales",
       "value": 64861,
-      "doc": "HY26_RESULTS"
+      "doc": "HY26_RESULTS",
+      "source_page": 4,
+      "source_excerpt": "Cost of Sales (64,861) (69,600)"
     },
     {
       "period": "H1FY2026",
       "statement": "pnl",
       "item": "gross_profit",
       "value": 289952,
-      "doc": "HY26_RESULTS"
+      "doc": "HY26_RESULTS",
+      "source_page": 4,
+      "source_excerpt": "Gross Profit 289,952 272,331"
     },
     {
       "period": "H1FY2026",
       "statement": "pnl",
       "item": "admin_expenses",
       "value": 781975,
-      "doc": "HY26_RESULTS"
+      "doc": "HY26_RESULTS",
+      "source_page": 4,
+      "source_excerpt": "Administrative Expenses (781,975) (677,908)"
     },
     {
       "period": "H1FY2026",
       "statement": "pnl",
       "item": "other_operating_income",
       "value": 8269,
-      "doc": "HY26_RESULTS"
+      "doc": "HY26_RESULTS",
+      "source_page": 4,
+      "source_excerpt": "Other Operating Income 8,269"
     },
     {
       "period": "H1FY2026",
       "statement": "pnl",
       "item": "operating_loss",
       "value": -483753,
-      "doc": "HY26_RESULTS"
+      "doc": "HY26_RESULTS",
+      "source_page": 4,
+      "source_excerpt": "Operating Loss (483,753) (405,577)"
     },
     {
       "period": "H1FY2026",
       "statement": "pnl",
       "item": "interest_expense",
       "value": 1391,
-      "doc": "HY26_RESULTS"
+      "doc": "HY26_RESULTS",
+      "source_page": 4,
+      "source_excerpt": "Interest Payable and Similar Charges (1,391) (1,036)"
     },
     {
       "period": "H1FY2026",
       "statement": "pnl",
       "item": "loss_after_tax",
       "value": -485144,
-      "doc": "HY26_RESULTS"
+      "doc": "HY26_RESULTS",
+      "source_page": 4,
+      "source_excerpt": "Loss for the Financial Period (485,144) (406,613)"
     },
     {
       "period": "H1FY2026",
@@ -321,6 +359,8 @@
       "item": "goodwill",
       "value": 669550,
       "doc": "HY26_RESULTS",
+      "source_page": 5,
+      "source_excerpt": "Goodwill 669,550 0",
       "note": "Note 4 of the same document states 669,500 - EUR50 internal inconsistency flagged by validator"
     },
     {
@@ -364,6 +404,8 @@
       "item": "contingent_consideration",
       "value": -850000,
       "doc": "HY26_RESULTS",
+      "source_page": 5,
+      "source_excerpt": "Contingent consideration -850,000",
       "note": "Loamin earnout, performance-linked, non-cash on completion"
     },
     {
@@ -400,6 +442,8 @@
       "item": "retained_earnings",
       "value": 236081,
       "doc": "HY26_RESULTS",
+      "source_page": 5,
+      "source_excerpt": "Retained Earnings 236,081 -676,790",
       "note": "Positive despite cumulative losses - pre-IPO capital reorganisation; validator raises anomaly"
     },
     {

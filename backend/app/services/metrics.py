@@ -69,7 +69,7 @@ class MetricsEngine:
                 "required_h2_acceleration_pct": round(accel, 1),
             },
             [f"Hitting the Senus 2030 50% CAGR in FY26 requires H2 revenue of "
-             f"EUR {h2_required:,.0f}, i.e. {accel:.0f}% growth vs H2 FY25. "
+             f"EUR {h2_required:,.0f}, i.e. {accel:.1f}% growth vs H2 FY25. "
              "H1 grew 4.1%; management guided 'modest growth' and cites "
              "weather-delayed sampling. Directors' own language points to "
              "FY26 landing below the CAGR line unless pipeline converts."],

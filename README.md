@@ -108,7 +108,42 @@ export ANTHROPIC_API_KEY=sk-ant-...          # enables /api/insights
 docker compose up
 ```
 
+Frontend: `cd frontend && npm install && npm run dev` — the Vite dev server
+proxies `/api/*` to `http://localhost:8000` (see `vite.config.ts`), so no
+env var is needed locally.
+
 Tests: `cd backend && DEMO_MODE=1 pytest`
+
+> **Stale `senus_demo.db`:** `DEMO_MODE=1` seeds a local SQLite file
+> (`backend/senus_demo.db`) once, on first run, and reuses it on every run
+> after that — `init_db_and_seed` skips seeding if any `FinancialFact` row
+> already exists. If you change `backend/seed/senus_facts.json`, the
+> validation rules, or the models, delete that file
+> (`rm backend/senus_demo.db`) before restarting/testing so the seed reruns
+> against the new data. It's gitignored (`*.db`), so this is safe.
+
+## Deploy (Render, split frontend/backend)
+
+Frontend (static site) and backend (web service) deploy as separate Render
+services on separate origins, so two things must line up:
+
+1. **Backend `CORS_ORIGINS`** — set this env var on the backend service to
+   the frontend's deployed URL (comma-separate multiple origins, e.g. a
+   preview URL plus the production one):
+   ```
+   CORS_ORIGINS=https://senus-board-report.onrender.com
+   ```
+   `backend/app/main.py` reads it and falls back to
+   `http://localhost:5173` if unset, so local dev is unaffected.
+
+2. **Frontend `VITE_API_URL`** — set this build-time env var on the
+   frontend static site to the backend service's URL (no trailing slash):
+   ```
+   VITE_API_URL=https://senus-board-report-api.onrender.com
+   ```
+   `frontend/src/api/client.ts` reads it once and prefixes every API
+   request with it. Leave it unset locally (defaults to `''`) so requests
+   stay relative and the Vite dev proxy above continues to work.
 
 ## API surface
 

@@ -1,5 +1,5 @@
 import { useFactProvenance } from '../../api/facts'
-import { StatusDot } from '../../components/StatusDot'
+import { StatusBadge } from '../../components/StatusBadge'
 import { UnauditedChip } from '../../components/Chip'
 import { LoadingBlock } from '../../components/LoadingBlock'
 import { ErrorBlock } from '../../components/ErrorBlock'
@@ -58,8 +58,7 @@ export function ProvenanceDrawer({
               </div>
 
               <div className="flex items-center gap-2">
-                <StatusDot status={query.data.validation_status} />
-                <span className="text-xs capitalize text-zinc-400">{query.data.validation_status}</span>
+                <StatusBadge status={query.data.validation_status} />
                 {!query.data.audited && <UnauditedChip />}
               </div>
               {query.data.validation_note && (

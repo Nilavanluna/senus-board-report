@@ -47,6 +47,7 @@ def list_facts(s: Session = Depends(get_session)):
         "id": r.id, "period": r.period_id, "statement": r.statement,
         "item": r.item, "value": r.value, "doc": r.doc_id,
         "validation_status": r.validation_status,
+        "validation_note": r.validation_note,
         "note": (r.extra or {}).get("note"),
     } for r in rows]
 

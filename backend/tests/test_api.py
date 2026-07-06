@@ -62,3 +62,33 @@ def test_kpis_expose_strategy_data():
         assert kpis["revenue_cagr_target"] == 0.5
         assert kpis["acv_by_product"]["ERA"] == 58900
         assert kpis["shares_in_issue"] == 2561332
+
+
+def test_validation_writeback_applied():
+    """The validator's findings must be persisted onto FinancialFact rows at
+    seed time, not just returned live from /api/validation."""
+    with client:
+        facts = client.get("/api/facts").json()
+        by_key = {(f["period"], f["item"]): f for f in facts}
+
+        gp = by_key[("H1FY2025", "gross_profit")]
+        assert gp["validation_status"] == "anomaly"
+        assert "SOURCE-DOCUMENT INCONSISTENCY" in gp["validation_note"]
+
+        re_ = by_key[("H1FY2026", "retained_earnings")]
+        assert re_["validation_status"] == "anomaly"
+        assert "capital reorganisation" in re_["validation_note"]
+
+        cc = by_key[("H1FY2026", "contingent_consideration")]
+        assert cc["validation_status"] == "anomaly"
+        assert "earnout" in cc["validation_note"]
+
+        gw = by_key[("H1FY2026", "goodwill")]
+        assert gw["validation_status"] == "anomaly"
+        assert "669,550" in gw["validation_note"] and "669,500" in gw["validation_note"]
+
+        # A fact covered by a passing rule is marked passed, not unchecked.
+        assert by_key[("H1FY2026", "gross_profit")]["validation_status"] == "passed"
+
+        # A fact no rule touches stays unchecked.
+        assert by_key[("FY2024", "revenue")]["validation_status"] == "unchecked"

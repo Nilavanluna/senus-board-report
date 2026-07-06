@@ -13,6 +13,7 @@ export interface FinancialFact {
   value: number
   doc: string
   validation_status: ValidationStatus
+  validation_note: string | null
   note: string | null
 }
 
