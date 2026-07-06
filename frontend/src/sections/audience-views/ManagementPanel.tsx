@@ -21,7 +21,7 @@ export function ManagementPanel({ facts, kpis }: { facts: FinancialFact[]; kpis:
             {costBase.map((f) => (
               <li key={f.period} className="flex items-center justify-between text-sm">
                 <span className="text-zinc-500">{f.period}</span>
-                <span className="tabular-nums text-zinc-200">{formatEUR(f.value)}</span>
+                <span className="font-numeric tabular-nums text-zinc-200">{formatEUR(f.value)}</span>
               </li>
             ))}
           </ul>
@@ -38,7 +38,7 @@ export function ManagementPanel({ facts, kpis }: { facts: FinancialFact[]; kpis:
                   </span>
                 </div>
                 <div className="mt-1 h-1.5 w-full overflow-hidden rounded-full bg-zinc-800">
-                  <div className="h-full rounded-full bg-blue-600" style={{ width: `${share * 100}%` }} />
+                  <div className="h-full rounded-full bg-brand" style={{ width: `${share * 100}%` }} />
                 </div>
               </li>
             ))}
@@ -53,11 +53,11 @@ export function ManagementPanel({ facts, kpis }: { facts: FinancialFact[]; kpis:
               <li key={product}>
                 <div className="flex items-center justify-between text-sm">
                   <span className="text-zinc-300">{product}</span>
-                  <span className="tabular-nums text-zinc-200">{formatEUR(value)}</span>
+                  <span className="font-numeric tabular-nums text-zinc-200">{formatEUR(value)}</span>
                 </div>
                 <div className="mt-1 h-1.5 w-full overflow-hidden rounded-full bg-zinc-800">
                   <div
-                    className="h-full rounded-full bg-blue-600"
+                    className="h-full rounded-full bg-brand"
                     style={{ width: `${(value / maxAcv) * 100}%` }}
                   />
                 </div>

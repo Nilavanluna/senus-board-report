@@ -2,6 +2,7 @@ import { CartesianGrid, Line, LineChart, ResponsiveContainer, Tooltip, XAxis, YA
 import { Card } from '../../components/Card'
 import { findMetric, factsIndex, getFact } from '../../lib/metrics'
 import { chartChrome, chartColor } from '../../lib/chartColors'
+import { numericFontFamily } from '../../lib/tokens'
 import { formatPercent } from '../../lib/format'
 import type { FinancialFact, MetricResult } from '../../api/types'
 
@@ -38,7 +39,15 @@ export function MarginTrendChart({
     const { x, y, index, value } = props
     if (index !== lastIndex || value == null || x === undefined || y === undefined) return <g />
     return (
-      <text x={x} y={y - 12} textAnchor="middle" fill={chartChrome.primaryText} fontSize={12} fontWeight={600}>
+      <text
+        x={x}
+        y={y - 12}
+        textAnchor="middle"
+        fill={chartChrome.primaryText}
+        fontSize={12}
+        fontWeight={600}
+        fontFamily={numericFontFamily}
+      >
         {formatPercent(value)}
       </text>
     )
@@ -58,7 +67,7 @@ export function MarginTrendChart({
           <YAxis
             domain={[0, 100]}
             tickFormatter={(v: any) => `${v}%`}
-            tick={{ fill: chartChrome.mutedText, fontSize: 12 }}
+            tick={{ fill: chartChrome.mutedText, fontSize: 12, fontFamily: numericFontFamily }}
             axisLine={false}
             tickLine={false}
             width={40}

@@ -1,1 +1,13 @@
 @import "tailwindcss";
+
+@theme {
+  /* Brand accent - deep emerald, suits the natural-capital / sustainability domain */
+  --color-brand: #059669; /* emerald-600 */
+  --color-brand-strong: #047857; /* emerald-700 - hover/active emphasis */
+
+  /* Numeric values render in a tabular mono face so figures line up in columns */
+  --font-numeric: ui-monospace, 'SF Mono', 'Cascadia Mono', 'Segoe UI Mono', Consolas, 'Liberation Mono', monospace;
+
+  /* Shared corner radius for card/panel surfaces */
+  --radius-panel: 0.75rem;
+}

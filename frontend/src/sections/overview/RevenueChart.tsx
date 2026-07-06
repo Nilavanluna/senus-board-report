@@ -2,6 +2,7 @@ import { Bar, BarChart, CartesianGrid, LabelList, ResponsiveContainer, Tooltip, 
 import { Card } from '../../components/Card'
 import { findMetric } from '../../lib/metrics'
 import { chartChrome, chartColor } from '../../lib/chartColors'
+import { numericFontFamily } from '../../lib/tokens'
 import { formatEUR } from '../../lib/format'
 import type { MetricResult } from '../../api/types'
 
@@ -40,7 +41,7 @@ export function RevenueChart({ metrics }: { metrics: MetricResult[] }) {
           />
           <YAxis
             tickFormatter={(v: any) => formatEUR(v, true)}
-            tick={{ fill: chartChrome.mutedText, fontSize: 12 }}
+            tick={{ fill: chartChrome.mutedText, fontSize: 12, fontFamily: numericFontFamily }}
             axisLine={false}
             tickLine={false}
             width={64}
@@ -56,7 +57,7 @@ export function RevenueChart({ metrics }: { metrics: MetricResult[] }) {
               dataKey="revenue"
               position="top"
               formatter={(v: any) => formatEUR(v, true)}
-              style={{ fill: chartChrome.secondaryText, fontSize: 11 }}
+              style={{ fill: chartChrome.secondaryText, fontSize: 11, fontFamily: numericFontFamily }}
             />
           </Bar>
         </BarChart>

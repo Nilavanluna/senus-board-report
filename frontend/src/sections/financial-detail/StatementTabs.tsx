@@ -21,7 +21,7 @@ export function StatementTabs({
           onClick={() => onChange(tab.key)}
           className={`border-b-2 px-4 py-2 text-sm font-medium transition-colors ${
             active === tab.key
-              ? 'border-blue-500 text-zinc-100'
+              ? 'border-brand text-zinc-100'
               : 'border-transparent text-zinc-500 hover:text-zinc-300'
           }`}
         >

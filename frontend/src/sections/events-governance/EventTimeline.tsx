@@ -19,7 +19,7 @@ export function EventTimeline({ events }: { events: CorporateEvent[] }) {
         const meta = TYPE_META[e.type] ?? { label: e.type, tone: 'zinc' as const }
         return (
           <li key={i} className="mb-8 last:mb-0">
-            <span className="absolute -left-[5px] mt-1.5 h-2.5 w-2.5 rounded-full border-2 border-zinc-950 bg-blue-500" />
+            <span className="absolute -left-[5px] mt-1.5 h-2.5 w-2.5 rounded-full border-2 border-zinc-950 bg-brand" />
             <div className="flex flex-wrap items-center gap-2">
               <p className="text-xs text-zinc-500">{formatDate(e.date)}</p>
               <Chip tone={meta.tone}>{meta.label}</Chip>

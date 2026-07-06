@@ -23,10 +23,10 @@ export function Senus2030Tracker({ metric }: { metric: MetricResult | undefined 
   const priorPacePct = target && priorYearH2 !== null ? ((delivered + priorYearH2) / target) * 100 : null
 
   return (
-    <div className="rounded-xl border border-blue-900/40 bg-gradient-to-br from-blue-950/30 via-zinc-900/40 to-zinc-900/40 p-6">
+    <div className="rounded-panel border border-brand/40 bg-gradient-to-br from-brand/10 via-zinc-900/40 to-zinc-900/40 p-6">
       <div className="flex flex-wrap items-start justify-between gap-4">
         <div>
-          <p className="text-xs font-medium uppercase tracking-wide text-blue-400">
+          <p className="text-xs font-medium uppercase tracking-wide text-brand">
             Senus 2030 · FY26 Revenue Tracker
           </p>
           <p className="mt-1 text-sm text-zinc-400">
@@ -35,7 +35,7 @@ export function Senus2030Tracker({ metric }: { metric: MetricResult | undefined 
         </div>
         <div className="text-right">
           <p className="text-xs text-zinc-500">FY26 target</p>
-          <p className="text-2xl font-semibold text-zinc-100">{formatEUR(target)}</p>
+          <p className="font-numeric text-2xl font-semibold tabular-nums text-zinc-100">{formatEUR(target)}</p>
         </div>
       </div>
 
@@ -45,7 +45,7 @@ export function Senus2030Tracker({ metric }: { metric: MetricResult | undefined 
           style={{ width: `${deliveredPct}%`, backgroundColor: chartColor.primary }}
         >
           {deliveredPct > 14 && (
-            <span className="text-xs font-medium text-white">{formatEUR(delivered, true)}</span>
+            <span className="font-numeric text-xs font-medium tabular-nums text-white">{formatEUR(delivered, true)}</span>
           )}
         </div>
         <div
@@ -53,7 +53,7 @@ export function Senus2030Tracker({ metric }: { metric: MetricResult | undefined 
           style={{ left: `${deliveredPct}%`, width: `${requiredPct}%`, backgroundColor: chartColor.warning }}
         >
           {requiredPct > 14 && (
-            <span className="text-xs font-medium text-white">{formatEUR(required, true)}</span>
+            <span className="font-numeric text-xs font-medium tabular-nums text-white">{formatEUR(required, true)}</span>
           )}
         </div>
         {priorPacePct !== null && (
@@ -81,15 +81,15 @@ export function Senus2030Tracker({ metric }: { metric: MetricResult | undefined 
       <div className="mt-6 grid grid-cols-1 gap-4 border-t border-zinc-800 pt-5 sm:grid-cols-3">
         <div>
           <p className="text-xs text-zinc-500">H1 FY26 delivered</p>
-          <p className="mt-1 text-lg font-medium text-zinc-100">{formatEUR(delivered)}</p>
+          <p className="font-numeric mt-1 text-lg font-medium tabular-nums text-zinc-100">{formatEUR(delivered)}</p>
         </div>
         <div>
           <p className="text-xs text-zinc-500">H2 FY26 required</p>
-          <p className="mt-1 text-lg font-medium text-amber-400">{formatEUR(required)}</p>
+          <p className="font-numeric mt-1 text-lg font-medium tabular-nums text-amber-400">{formatEUR(required)}</p>
         </div>
         <div>
           <p className="text-xs text-zinc-500">Required H2 acceleration</p>
-          <p className="mt-1 text-lg font-medium text-amber-400">
+          <p className="font-numeric mt-1 text-lg font-medium tabular-nums text-amber-400">
             {accelerationPct !== null ? `+${formatPercent(accelerationPct)}` : '—'} vs H2 FY25
           </p>
         </div>

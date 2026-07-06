@@ -9,7 +9,7 @@ export function ValidationBanner({ report }: { report: ValidationReport }) {
   const overallStatus = failed > 0 ? 'failed' : anomalies > 0 ? 'anomaly' : 'passed'
 
   return (
-    <div className="rounded-xl border border-zinc-800 bg-zinc-900/40">
+    <div className="rounded-panel border border-zinc-800 bg-zinc-900/40">
       <button
         onClick={() => setOpen((o) => !o)}
         className="flex w-full items-center justify-between gap-3 px-5 py-3 text-left text-sm text-zinc-300 transition-colors hover:bg-zinc-900/70"

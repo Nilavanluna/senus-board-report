@@ -54,7 +54,7 @@ export function ProvenanceDrawer({
 
               <div>
                 <p className="text-xs text-zinc-500">Reported value</p>
-                <p className="mt-1 text-lg font-semibold text-zinc-100">{formatEUR(query.data.value)}</p>
+                <p className="font-numeric mt-1 text-lg font-semibold tabular-nums text-zinc-100">{formatEUR(query.data.value)}</p>
               </div>
 
               <div className="flex items-center gap-2">
@@ -73,7 +73,7 @@ export function ProvenanceDrawer({
                   href={query.data.source_url}
                   target="_blank"
                   rel="noreferrer"
-                  className="mt-1 block text-sm font-medium text-blue-400 hover:underline"
+                  className="mt-1 block text-sm font-medium text-brand hover:underline"
                 >
                   {query.data.document}
                 </a>
@@ -96,11 +96,11 @@ export function ProvenanceDrawer({
                 <p className="text-xs text-zinc-500">Extraction confidence</p>
                 <div className="mt-1.5 h-1.5 w-full overflow-hidden rounded-full bg-zinc-800">
                   <div
-                    className="h-full rounded-full bg-blue-600"
+                    className="h-full rounded-full bg-brand"
                     style={{ width: `${query.data.extraction_confidence * 100}%` }}
                   />
                 </div>
-                <p className="mt-1 text-xs text-zinc-500">
+                <p className="font-numeric mt-1 text-xs tabular-nums text-zinc-500">
                   {formatPercent(query.data.extraction_confidence * 100, 0)}
                 </p>
               </div>

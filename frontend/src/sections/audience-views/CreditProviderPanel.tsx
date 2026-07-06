@@ -45,13 +45,13 @@ export function CreditProviderPanel({ metrics, facts }: { metrics: MetricResult[
 
       <Card title="Net assets" subtitle="Contingent consideration treatment">
         <div className="flex items-center justify-between">
-          <p className="text-2xl font-semibold text-zinc-100">{formatEUR(displayedNetAssets)}</p>
+          <p className="font-numeric text-2xl font-semibold tabular-nums text-zinc-100">{formatEUR(displayedNetAssets)}</p>
           <label className="flex items-center gap-2 text-xs text-zinc-400">
             <input
               type="checkbox"
               checked={excludeContingent}
               onChange={(e) => setExcludeContingent(e.target.checked)}
-              className="h-3.5 w-3.5 rounded border-zinc-600 bg-zinc-800 accent-blue-600"
+              className="h-3.5 w-3.5 rounded border-zinc-600 bg-zinc-800 accent-brand"
             />
             Exclude contingent consideration
           </label>

@@ -72,7 +72,7 @@ export function FactsTable({
                   <td key={p} className="py-2 px-4 text-right">
                     <button
                       onClick={() => onSelectFact(fact.id)}
-                      className="group inline-flex items-center gap-1.5 rounded px-1.5 py-0.5 text-right tabular-nums text-zinc-200 hover:bg-zinc-800/60 hover:text-white"
+                      className="font-numeric group inline-flex items-center gap-1.5 rounded px-1.5 py-0.5 text-right tabular-nums text-zinc-200 hover:bg-zinc-800/60 hover:text-white"
                     >
                       {isAnomalous && (
                         <StatusDot
