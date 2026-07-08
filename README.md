@@ -1,6 +1,7 @@
 # Senus PLC Board Report — AI-Native Financial Analysis Platform
 
 **Live demo:** https://senus-dashboard.onrender.com
+(demo access: `board@senus.com` / `senus2030`)
 
 An AI-native platform that extracts Senus PLC's published financials into a
 traceable database, computes board-report metrics, and generates
